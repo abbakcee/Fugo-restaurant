@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0a0a0c;
+    color: #f5f2eb;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif-luxury {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom subtle luxury glass & glow utilities */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #f3e7c4 0%, #d4af37 50%, #aa8024 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-subtle {
+  border-color: rgba(212, 175, 55, 0.22);
+}
+
+.gold-border-glow:hover {
+  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.12);
+}
+
+.bg-charcoal-card {
+  background-color: rgba(18, 18, 22, 0.85);
+  backdrop-filter: blur(12px);
+}
+
+/* Hide scrollbar for tabs carousel on mobile while keeping smooth scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

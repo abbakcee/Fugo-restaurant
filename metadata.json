@@ -1,0 +1,6 @@
+{
+  "name": "Fugo Bar & Restaurant | Accra, Ghana",
+  "description": "A stylish dining and lounge experience in Accra, Ghana. Modern food, craft cocktails, and late-night nightlife energy at 14 Jungle Road.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
